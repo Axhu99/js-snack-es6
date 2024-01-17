@@ -149,16 +149,16 @@ const teamsSerieA = [
     }
 ]
 
-const max = 100;
 const min = 0;
+const max = 100;
 
 // funzione per generare un numero casuale con un MAX e un MIN
-const getRandomNum = () => Math.floor(Math.random()* (max + 1 - min)) + min;
+const getRandomNum = (max, min) => Math.floor(Math.random()* (max + 1 - min)) + min;
 
 // nuovo array dove inserisco i numeri casuali
 const teamsSerieARandom = teamsSerieA.map((teamSerieA) =>{
-    teamSerieA.point = getRandomNum();
-    teamSerieA.foul = getRandomNum();
+    teamSerieA.point = getRandomNum(max, min);
+    teamSerieA.foul = getRandomNum(max, min);
 
     return teamSerieA
 })
