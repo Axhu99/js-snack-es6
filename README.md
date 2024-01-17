@@ -40,6 +40,7 @@ Id|Name|Grades
 Creare un array di oggetti:
 Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: name e peso.
 Stampare in console la bici con peso minore utilizzando il destructuring
+
 ## SNACK 4
 Creare un array di oggetti di squadre di calcio.
 Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.

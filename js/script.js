@@ -120,7 +120,7 @@ const bikes = [
 
 const weightMinBike = bikes.reduce((min, bike) => {
     
-    return bike.weight < min ? min = bike.weight : min
+    return bike.weight < min ?  bike.weight : min
 
 }, bikes[0].weight)
 
