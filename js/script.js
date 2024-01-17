@@ -25,7 +25,7 @@ const guestsList = guests.map((guest, i) => {
 
 console.log(guestsList) */
 
-const students = [
+/* const students = [
     {
         Id: 213,
         name: 'Marco della Rovere',
@@ -73,4 +73,55 @@ console.log(studentVotoIdOver)
 
 const studentNameUppercase = students.map(({name}) => name.toUpperCase())
 
-console.log(studentNameUppercase)
+console.log(studentNameUppercase) */
+
+const bikes = [
+    {
+        name: 'Atala',
+        weight: 90
+    },
+    {
+        name: 'Basso',
+        weight: 80
+    },
+    {
+        name: 'Bianchi',
+        weight: 100
+    },
+    {
+        name: 'Bottocchia',
+        weight: 150
+    },
+    {
+        name: 'Carrera',
+        weight: 120
+    },
+    {
+        name: 'Cinelli',
+        weight: 110
+    },
+    {
+        name: 'De Rosa',
+        weight: 70
+    },
+    {
+        name: 'Ducati',
+        weight: 140
+    },
+    {
+        name: 'Garelli',
+        weight: 100
+    },
+    {
+        name: 'Kuota',
+        weight: 90
+    }
+]
+
+const weightMinBike = bikes.reduce((min, bike) => {
+    
+    return bike.weight < min ? min = bike.weight : min
+
+}, bikes[0].weight)
+
+console.log(weightMinBike)
