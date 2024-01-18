@@ -75,7 +75,7 @@ const studentNameUppercase = students.map(({name}) => name.toUpperCase())
 
 console.log(studentNameUppercase) */
 
-const bikes = [
+/* const bikes = [
     {
         name: 'Atala',
         weight: 90
@@ -118,15 +118,11 @@ const bikes = [
     }
 ]
 
-const weightMinBike = bikes.reduce((min, bike) => {
-    
-    return bike.weight < min.weight ?  bike : min
-    
-}, bikes[0])
+const weightMinBike = bikes.reduce((min, bike) => bike.weight < min.weight ?  bike : min, bikes[0])
 
-console.log(weightMinBike)
+console.log(weightMinBike) */
 
-/* const teamsSerieA = [
+const teamsSerieA = [
     {
         name: 'Roma',
         point: 0,
@@ -153,7 +149,7 @@ const min = 0;
 const max = 100;
 
 // funzione per generare un numero casuale con un MAX e un MIN
-const getRandomNum = (max, min) => Math.floor(Math.random()* (max + 1 - min)) + min;
+const getRandomNum = (max, min) => Math.floor(Math.random()* (max + 1 - min) + min);
 
 // nuovo array dove inserisco i numeri casuali
 const teamsSerieARandom = teamsSerieA.map((teamSerieA) =>{
@@ -166,14 +162,6 @@ const teamsSerieARandom = teamsSerieA.map((teamSerieA) =>{
 console.log(teamsSerieARandom);
 
 // nuovo array con solo il nome della squadra e i falli fatti, usando il destructuring
-const teamsSerieANew = teamsSerieA.reduce((a, {name, foul}) =>{
-    const team = {
-        name,
-        foul
-    }; 
-    a.push(team);
-
-    return a;
-}, [])
+const teamsSerieANew = teamsSerieA.map(({name, foul}) =>(({name, foul})))
 // stampiamo il risultato
-console.log(teamsSerieANew) */
+console.log(teamsSerieANew)
