@@ -75,7 +75,7 @@ const studentNameUppercase = students.map(({name}) => name.toUpperCase())
 
 console.log(studentNameUppercase) */
 
-/* const bikes = [
+const bikes = [
     {
         name: 'Atala',
         weight: 90
@@ -120,13 +120,13 @@ console.log(studentNameUppercase) */
 
 const weightMinBike = bikes.reduce((min, bike) => {
     
-    return bike.weight < min ?  bike.weight : min
+    return bike.weight < min.weight ?  bike : min
+    
+}, bikes[0])
 
-}, bikes[0].weight)
+console.log(weightMinBike)
 
-console.log(weightMinBike) */
-
-const teamsSerieA = [
+/* const teamsSerieA = [
     {
         name: 'Roma',
         point: 0,
@@ -176,4 +176,4 @@ const teamsSerieANew = teamsSerieA.reduce((a, {name, foul}) =>{
     return a;
 }, [])
 // stampiamo il risultato
-console.log(teamsSerieANew)
+console.log(teamsSerieANew) */
